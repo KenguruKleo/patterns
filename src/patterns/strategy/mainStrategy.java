@@ -5,7 +5,7 @@ import patterns.strategy.duck.Duck;
 import patterns.strategy.duck.MallardDuck;
 import patterns.strategy.duck.ModelDuck;
 
-public class strategy {
+public class mainStrategy {
   public static void main(String[] args){
     Duck mallard = new MallardDuck();
     mallard.performQuack();
