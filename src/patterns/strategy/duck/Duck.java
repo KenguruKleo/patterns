@@ -1,11 +1,19 @@
-package patterns.encapsulation.duck;
+package patterns.strategy.duck;
 
-import patterns.encapsulation.behavior.FlyBehavior;
-import patterns.encapsulation.behavior.QuackBehavior;
+import patterns.strategy.behavior.FlyBehavior;
+import patterns.strategy.behavior.QuackBehavior;
 
 public abstract class Duck {
   FlyBehavior flyBehavior;
   QuackBehavior quackBehavior;
+
+  public void setFlyBehavior(FlyBehavior flyBehavior) {
+    this.flyBehavior = flyBehavior;
+  }
+
+  public void setQuackBehavior(QuackBehavior quackBehavior) {
+    this.quackBehavior = quackBehavior;
+  }
 
   public Duck() {
   }
